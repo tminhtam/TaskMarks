@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule "home" "index.php"
+RewriteRule "hot" "index.php?q=hot"
+RewriteRule "new" "index.php?q=new"
+RewriteRule "^post/(.*)$" "index.php?q=post&id=$1"
+RewriteRule "^type/(.*)$" "index.php?q=filter&id=$1"
